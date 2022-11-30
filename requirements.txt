@@ -1,0 +1,13 @@
+markupsafe==2.0.1
+
+sqlparse
+pymssql
+pyodbc
+mysqlclient
+mysql-connector-python
+apache-airflow-providers-common-sql
+apache-airflow-providers-odbc
+apache-airflow-providers-microsoft-mssql
+apache-airflow-providers-mysql
+gitpython
+CouchDB3
