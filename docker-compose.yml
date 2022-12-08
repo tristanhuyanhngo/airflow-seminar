@@ -59,7 +59,7 @@ x-airflow-common:
 
 services:
   postgres:
-    image: postgres:13
+    image: postgres:latest
     environment:
       POSTGRES_USER: airflow
       POSTGRES_PASSWORD: airflow
@@ -69,7 +69,7 @@ services:
     ports:
       - 5432:5432
     healthcheck:
-      test: ["CMD", "pg_isready", "-U", "airflow"]
+      test: ["CMD-SHELL", "pg_isready", "-U", "user"]
       interval: 5s
       retries: 5
     restart: always
@@ -103,3 +103,4 @@ services:
 
 volumes:
   postgres-db-volume:
+  mongodb-volume:
